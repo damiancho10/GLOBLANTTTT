@@ -18,7 +18,7 @@
         <nav class="Nav">
             <a href="">INICIO</a>
             <a href="#Seccion-2">¿A QUE SE REFIERE?</a>
-            <a href="#Premios">SOBRE NOSOTROS</a>
+            
         </nav>
         <section class="banner">
             <img src="img/comidaaaaaa.png" alt="">
@@ -69,14 +69,15 @@
                         <img src="img/frutas-y-verduras.jpeg">
                     </div>
                     <div class="bio_p">
-                        <h4>Fruras y Verduras</h4>
-                        <p>Consumir más frutas y verduras, granos integrales, carnes magras, frutos secos y frijoles es una manera segura y saludable de perder o mantener el peso. Las frutas y verduras también proveen vitaminas y otras sustancias que son importantes para la buena salud.</p>
+                        <h4>Frutas y Verduras</h4>
+                        <p>Consumir más frutas y verduras, granos integrales, carnes magras, frutos secos y frijoles es una manera segura y saludable de perder o mantener el peso. Las frutas y verduras</p>
                         <a href="https://www.fao.org/3/cb2395es/online/src/html/frutas-y-verduras.html">Ver mas</a>
                     </div>
                 </div>
             </aside>
         </section>
         <div> 
+            <br><br><br><br><br>
             <br>
             <br>
             <br>
@@ -134,6 +135,7 @@
             </article>
             <aside class="Aside">
                 <br>
+                <br><br><br>
                 <div class="Mapa">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d589.5702223477022!2d-75.5658024880529!3d6.245310400612348!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e442857026d17cd%3A0x2fb6e7d32aa9a74f!2sVive%20Saludable%20Restaurante-Ecotienda!5e0!3m2!1ses-419!2sco!4v1683039010663!5m2!1ses-419!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     
@@ -144,11 +146,11 @@
                 <div class="Form-div">
                     <h3>Es importante tu opinion</h3>
                     <p>Que tipo decomidasaludable te gustaria consumir, ademas de esto,seguiras comiendo este tipo de comidas despues de leer esta pagina?</p>
-                    <form action="" class="Form">
+                    <form class="Form" onsubmit="pepe(event)">
                         <input type="email" placeholder="Email" class="input">
-                        <input type="text" placeholder="Asunto" class="input">
+
                         <textarea name="" id="" cols="30" rows="5" placeholder="Mensaje" class="Textarea"></textarea>
-                        <input type="submit" value="Enviar" class="submit" onclick="pepe()">
+                        <input type="submit" value="Enviar" class="submit">
                     </form>
                 </div>
             </aside>
@@ -158,7 +160,7 @@
             <nav class="Nav_footer">
                 <a href="">INICIO</a>
                 <a href="#Seccion-2">¿A QUE SE REFIERE?</a>
-                <a href="#ALBUMS">SOBRE NOSOTROS</a>
+                
     
             </nav>
              
@@ -166,7 +168,9 @@
 
 
             <script type="text/javascript">
-                function pepe(){
+                function pepe(event){
+                    event.preventDefault();
+
                     Swal.fire({
                         position: 'top-end',
                         icon: 'success',

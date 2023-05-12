@@ -34,16 +34,8 @@
     height: 90%;
     margin-right: 10px;
 }
-.Nav{
-    background-color: black;
-    width: 70%;
-    height: 100px;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-    overflow: hidden;
-}
+
+
 .Nav a{
     font-family: 'Times New Roman', Times, serif;
     text-decoration: none;
@@ -128,7 +120,7 @@
     
 }
 .Left_titulo h2{
-    font-size: 50px;
+    font-size: 40px;
 }
 .Left_titulo h3{
     font-size: 25px;
@@ -175,7 +167,7 @@
 .bio_p{
     width: 50%;
     margin: 0 10px;
-    font-size: 15px;
+    font-size: 14px;
 }
 .bio_p h4{
     font-size: 30px;
@@ -332,7 +324,6 @@ Aside{
 }
 .Seccion_4{
     width: 70%;
-    height: 50vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -348,6 +339,7 @@ Aside{
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    position: absolute;
 }
 .Nav_footer a{
     text-decoration: none;
